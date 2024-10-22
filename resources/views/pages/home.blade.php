@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    @vite("resources/js/app.js")
-</head>
+@extends("layouts.app")
 
-<body>
-   <header>@include("partials.header")</header>
-        <main>
-@yield("main-content")
-        </main>
 
-   <footer>@include("partials.footer")</footer>
-</body>
-</html>
+
+@section("main-content")
+<h1>
+ DC comics
+</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+@endsection

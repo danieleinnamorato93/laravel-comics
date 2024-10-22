@@ -9,6 +9,10 @@
 </head>
 
 <body>
-@yield("main-content")
-</body>
+    @include("partials.header")
+
+    @yield("main-content")
+
+    @include("partials.footer")
+    </body>
 </html>
