@@ -24,3 +24,15 @@ Route::get('/comics', function () {
 
     return view('comics.index', compact("comics"));
 })->name("comics.index");
+
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config("db.comics");
+    if(!isset($comics[$id])){
+        abort(404);
+    }
+    $comic = $comics[$id];
+
+
+    return view('comics.show', compact("comic"));
+})->name("comics.show");
